@@ -8,6 +8,8 @@ import operand.BinaryService;
 
 import operand.OperandService;
 import operator.AddService;
+import operator.DivideService;
+import operator.MultiplyService;
 import operator.OperatorService;
 import operator.SubtractService;
 
@@ -32,16 +34,45 @@ class OperatorTest {
 	void testSubstraction() {
 		
 		//build
-		OperandService val = new BinaryService(5,5);
+		OperandService val = new BinaryService(-5,5);
 		OperatorService add = new SubtractService(val);
 		
 		//operate
 		add.execute();
 		
 		//check
-		assertEquals(val.getAnswer(),0);
+		assertEquals(val.getAnswer(),-10);
 	}
 	
+	
+	@Test
+	void testMultiplication() {
+		
+		//build
+		OperandService val = new BinaryService(-5,5);
+		OperatorService add = new MultiplyService(val);
+		
+		//operate
+		add.execute();
+		
+		//check
+		assertEquals(val.getAnswer(),-25);
+	}
+	
+	
+	@Test
+	void testDivision() {
+		
+		//build
+		OperandService val = new BinaryService(-5,5);
+		OperatorService add = new DivideService(val);
+		
+		//operate
+		add.execute();
+		
+		//check
+		assertEquals(val.getAnswer(),-1);
+	}
 	
 	
 

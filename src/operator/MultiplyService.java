@@ -2,23 +2,20 @@ package operator;
 
 import operand.OperandService;
 
-public class AddService implements OperatorService {
+public class MultiplyService implements OperatorService {
 
-	
 	private final OperandService dependency;
 
-	 public AddService(OperandService dependency) {
+	 public MultiplyService(OperandService dependency) {
 	      this.dependency = dependency;
 	   }
 	 
 	@Override
 	public void execute() {
-		int sum = dependency.execute()[0] + dependency.execute()[1]; 
+		int sum = dependency.execute()[0] * dependency.execute()[1]; 
+		
 		
 		dependency.setValue(sum);
 		
 	}
-
-	
-	
 }
