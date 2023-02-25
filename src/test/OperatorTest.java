@@ -9,6 +9,7 @@ import operand.BinaryService;
 import operand.OperandService;
 import operator.AddService;
 import operator.OperatorService;
+import operator.SubtractService;
 
 class OperatorTest {
 
@@ -24,6 +25,21 @@ class OperatorTest {
 		
 		//check
 		assertEquals(val.getAnswer(),10);
+	}
+	
+	
+	@Test
+	void testSubstraction() {
+		
+		//build
+		OperandService val = new BinaryService(5,5);
+		OperatorService add = new SubtractService(val);
+		
+		//operate
+		add.execute();
+		
+		//check
+		assertEquals(val.getAnswer(),0);
 	}
 	
 	
