@@ -3,23 +3,25 @@ package operand;
 public class UnaryService implements OperandService {
 
 	
-	private double x;
+	private double input;
 	
 	private double value = 0;
 	
-	 public UnaryService(int x) {
-		 this.x = x;
+	 public UnaryService(double input) {
+		 this.input = input;
 	   }
 	 
 	@Override
 	public double[] execute() {
-		// TODO Auto-generated method stub
-		return null;
+		   // Return a lambda expression hat returns a double array
+        return  new double[]{input};
+        
 	}
-
+	
 	@Override
 	public void setValue(double value) {
 		// TODO Auto-generated method stub
+		this.value = value;
 
 	}
 

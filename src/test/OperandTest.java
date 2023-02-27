@@ -43,7 +43,7 @@ class OperandTest {
 		add.execute();
 		
 		//check
-		assertEquals(val.getAnswer(),-10);
+		assertEquals(val.getAnswer(),5);
 	}
 	
 	
