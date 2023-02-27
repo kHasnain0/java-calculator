@@ -2,10 +2,10 @@ package operand;
 
 public interface OperandService {
 	
-	public int[] execute();
+	public double[] execute();
 
-	public void setValue(int value);
+	public void setValue(double value);
 	
-	public int getAnswer();
+	public double getAnswer();
 
 }

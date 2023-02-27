@@ -13,7 +13,7 @@ public class AddService implements OperatorService {
 	 
 	@Override
 	public void execute() {
-		int sum = dependency.execute()[0] + dependency.execute()[1]; 
+		double sum = dependency.execute()[0] + dependency.execute()[1]; 
 		
 		dependency.setValue(sum);
 		

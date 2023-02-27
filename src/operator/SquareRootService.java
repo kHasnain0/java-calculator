@@ -12,7 +12,7 @@ public class SquareRootService implements OperatorService {
 	 
 	@Override
 	public void execute() {
-		int sqRoot = Math.sqrt(dependency.execute()[0]); 
+		double sqRoot = Math.sqrt(dependency.execute()[0]); 
 		
 		
 		dependency.setValue(sqRoot);

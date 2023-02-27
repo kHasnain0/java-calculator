@@ -3,28 +3,28 @@ package operand;
 public class UnaryService implements OperandService {
 
 	
-	private int x;
+	private double x;
 	
-	private int value = 0;
+	private double value = 0;
 	
 	 public UnaryService(int x) {
 		 this.x = x;
 	   }
 	 
 	@Override
-	public int[] execute() {
+	public double[] execute() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void setValue(int value) {
+	public void setValue(double value) {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public int getAnswer() {
+	public double getAnswer() {
 		// TODO Auto-generated method stub
 		return value;
 	}

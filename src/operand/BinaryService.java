@@ -2,10 +2,10 @@ package operand;
 
 public class BinaryService implements OperandService {
 
-	private int x;
-	private int y;
+	private double x;
+	private double y;
 	
-	private int value = 0;
+	private double value = 0;
 	
 	 public BinaryService(int x, int y) {
 		 this.x = x;
@@ -13,9 +13,9 @@ public class BinaryService implements OperandService {
 	   }
 	 
 	@Override
-	public int[] execute()  {
+	public double[] execute()  {
 		
-		int[] values = {x,y};
+		double[] values = {x,y};
 		
 		return values;
 			
@@ -23,13 +23,13 @@ public class BinaryService implements OperandService {
 	
 
 	@Override
-	public int getAnswer() {
+	public double getAnswer() {
 		// TODO Auto-generated method stub
 		return this.value;
 	}
 
 	@Override
-	public void setValue(int value) {
+	public void setValue(double value) {
 		// TODO Auto-generated method stub
 		this.value = value;
 		
