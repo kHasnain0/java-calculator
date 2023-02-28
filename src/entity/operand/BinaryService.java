@@ -1,36 +1,33 @@
-package operand;
+package entity.operand;
 
 public class BinaryService implements OperandService {
 
-	private double x;
-	private double y;
+	private double inputA;
+	private double inputB;
 	
 	private double value = 0;
 	
-	 public BinaryService(int x, int y) {
-		 this.x = x;
-		 this.y = y;
+	 public BinaryService(double inputA, double inputB) {
+		 this.inputA = inputA;
+		 this.inputB = inputB;
 	   }
 	 
 	@Override
 	public double[] execute()  {
 		
-		double[] values = {x,y};
-		
-		return values;
-			
+		return new  double[]{inputA, inputB};		
 	}
 	
 
 	@Override
 	public double getAnswer() {
-		// TODO Auto-generated method stub
+		
 		return this.value;
 	}
 
 	@Override
 	public void setValue(double value) {
-		// TODO Auto-generated method stub
+		
 		this.value = value;
 		
 	}

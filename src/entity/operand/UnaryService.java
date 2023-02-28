@@ -1,4 +1,4 @@
-package operand;
+package entity.operand;
 
 public class UnaryService implements OperandService {
 
@@ -13,7 +13,7 @@ public class UnaryService implements OperandService {
 	 
 	@Override
 	public double[] execute() {
-		   // Return a lambda expression hat returns a double array
+		   
         return  new double[]{input};
         
 	}

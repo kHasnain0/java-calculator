@@ -1,6 +1,6 @@
-package operator;
+package entity.operator;
 
-import operand.OperandService;
+import entity.operand.OperandService;
 
 public class SubtractService implements OperatorService {
 

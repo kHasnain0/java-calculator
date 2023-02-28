@@ -1,4 +1,4 @@
-package operand;
+package entity.operand;
 
 public interface OperandService {
 	
